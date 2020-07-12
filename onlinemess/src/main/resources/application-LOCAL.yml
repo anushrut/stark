@@ -1,0 +1,16 @@
+
+#############################################################
+########## LOCAL Environment ################################
+#############################################################
+spring:
+   profiles: LOCAL
+   datasource:
+      url: jdbc:mysql://localhost:3306/onlinemess?useSSL=false
+      username: anush
+      password: sparks123
+
+server:
+   port: 8081
+   tomcat:
+      max-threads: 500
+      max-connections: 500
