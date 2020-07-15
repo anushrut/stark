@@ -1,4 +1,4 @@
-package com.anush.onlinemess.api;
+package com.anush.onlinemess.controller;
 
 import com.anush.onlinemess.common.enums.APIStatus;
 import com.anush.onlinemess.dto.APIResponse;

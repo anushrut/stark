@@ -31,4 +31,14 @@ public class MenuServiceImpl implements MenuService {
         }
         return itemDTOList;
     }
+
+    @Override
+    public List<ItemDTO> getMenu(int dayNo) {
+        List<ItemDTO> itemDTOList = new ArrayList<>();
+        List<Item> list = itemRepository.findByDay(dayNo);
+        for (Item item : list) {
+            itemDTOList.add(itemMapper.map(item));
+        }
+        return itemDTOList;
+    }
 }
